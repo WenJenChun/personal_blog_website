@@ -1,0 +1,151 @@
+@import url(./config.css);
+@import url(./header.css);
+
+.grid-template{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "hd"
+    "sd"
+    "main"
+    "ft";
+}
+
+#head{
+    grid-area: hd;
+    border-bottom: 1px solid var(--secondary);
+}
+
+#side{
+    grid-area: sd;
+}
+
+#main{
+    grid-area: main;
+}
+
+#footer{
+    grid-area: ft;
+    color: white;
+    background-color: var(--primary);
+    font-weight: 300;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.avatar{
+    border-radius: 50%;
+    height: auto;
+    width: 40%;
+    display: block;
+    margin: 30px auto 10px auto;
+}
+
+.author-name{
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+.author-intro{
+    font-weight: 200;
+    font-size: 14pt;
+    font-style: italic;
+    text-align: justify;
+    margin: 20px 20px;
+}
+
+.orange-button{
+    background-color: var(--primary);
+    color: white;
+    font-family: inherit;
+    font-weight: 200;
+    font-size: 14pt;
+    padding: 6px 12px;
+    border-radius: 3px;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.orange-button:hover{
+    font-size: 16pt;
+    transition-duration: 0.3s;
+} 
+
+
+.card{
+    display: block;
+    margin: 10px 15px;
+    border-bottom: 1px solid var(--secondary);
+    padding-bottom: 20px;
+}
+
+.article-title{
+    font-weight: 200;
+    font-size: 22pt;
+    color: var(--primary);
+    margin-top: 20px;
+}
+
+.card-body{
+    margin: 20px 0;
+}
+
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* medium screen */
+@media(min-width:576px) and (max-width:768px){
+
+    .grid-template{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 0.5fr 4fr 0.5fr;
+        grid-template-areas: 
+        "hd hd"
+        "main sd"
+        "ft ft" ;
+    }
+    
+    #head{
+        margin-bottom: 5vh;
+    }
+    
+    .card{
+        margin: 10px 40px;
+    }
+
+}
+
+
+/* big screen */
+@media(min-width: 769px){
+    
+    .grid-template{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 1fr;
+        grid-template-rows: 0.5fr 4fr 0.5fr;
+        grid-template-areas: 
+        "hd hd hd hd"
+        ". main sd ."
+        "ft ft ft ft" ;
+    }
+
+    #head{
+        margin-bottom: 5vh;
+    }
+
+    .card{
+        margin: 10px 40px;
+    }
+
+}
+
+
+
+

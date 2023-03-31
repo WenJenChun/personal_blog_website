@@ -1,0 +1,30 @@
+.blog-title{
+    padding: 1.5rem 0;
+    font-weight: 300;
+    font-size: 36pt;
+    text-align: center;
+    background-color: var(--primary);
+    color: white;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 1rem;
+}
+
+.nav-item {
+    font-weight: 300;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.nav-item a{
+    font-size: 0.9rem;
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+

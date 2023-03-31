@@ -1,0 +1,50 @@
+#post-content{
+    padding: 0 1.2rem;
+}
+
+.post-head{
+    padding: 1.2rem 0;
+}
+
+.post-body{
+    padding: 1.2rem 0;
+}
+
+.blog-img{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 1rem auto 0 auto;
+}
+
+.quote-figcaption{
+    font-size: 0.8rem;
+    font-weight: 200;
+    font-style: italic;
+    text-align: end;
+    margin: 1rem 0;
+}
+
+.img-figcaption{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+
+
+.post-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem 0 0.5rem 0;
+}
+
+.share-buttons a{
+    color: var(--secondary);
+}
+
+
+

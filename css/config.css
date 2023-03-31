@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    --primary: #FE6E00;
+    --secondary:#165B13;
+    --light-secondary: #C8D6C1;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-weight: 100;
+    font-size: 16pt;
+    color: #444;
+    text-align: justify;
+}
+
+h1{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 3rem;
+    text-decoration-line: underline;
+    text-underline-offset: 0.6rem;
+    text-decoration-thickness: 10px;
+    text-decoration-color: yellow;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--primary);
+    line-height: 2rem;
+    text-underline-offset: 0.5rem;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--primary);
+    text-decoration-color: yellow;
+    margin-bottom: 1rem;
+}
+
+h4{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary);
+    margin: 1rem 0;
+}
+
+blockquote{
+    margin: 2rem 4rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.tag{
+    font-weight: 300;
+    font-size: 14pt;
+    color: #165B13;
+    align-self: center;
+}
+
+.orange-button{
+    background-color: var(--primary);
+    color: white;
+    font-family: inherit;
+    font-weight: 200;
+    font-size: 14pt;
+    padding: 6px 12px;
+    border-radius: 3px;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.orange-button:hover{
+    font-size: 16pt;
+    transition-duration: 0.3s;
+} 
+
+.center{
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bottom-spacer{
+    margin-bottom: 30px;
+}
