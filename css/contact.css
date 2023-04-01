@@ -1,0 +1,90 @@
+@import url(./config.css);
+@import url(./header.css);
+
+html, body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    flex: none;
+}
+
+section {
+    flex: auto;
+}
+
+header{
+    border-bottom: 1px solid var(--secondary);
+}
+
+.contact-box{
+    margin: 2rem auto 3rem auto;
+}
+
+.contact-head{
+    text-align: center;
+    margin:1rem auto;
+}
+
+.contact-title{
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.contact-body{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.input-title{
+    display: block;
+    color: var(--secondary);
+    font-weight: 200;
+    margin-bottom: 0.2rem;
+}
+
+.input-box{
+    display: block;
+    width: 100%;
+    border: 0.5px solid var(--secondary);
+    border-radius: 6px;
+    padding: 0.3rem 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-bottom{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#footer{
+    grid-area: ft;
+    color: white;
+    background-color: var(--primary);
+    font-weight: 300;
+    text-align: center;
+    padding: 50px 0;
+}
+
+@media(min-width:992px) and (max-width:1199px){
+    .contact-box{
+        width:60%;
+        margin: 2rem auto 3rem auto;
+    }
+}
+
+@media(min-width:1200px){
+    .contact-box{
+        width:50%;
+        margin: 2rem auto 3rem auto;
+    }
+}
+
